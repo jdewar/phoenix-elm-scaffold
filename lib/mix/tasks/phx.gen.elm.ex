@@ -45,7 +45,7 @@ defmodule Mix.Tasks.Phx.Gen.Elm do
   Generates an elm app inside a Phoenix (1.3) app with the necessary scaffolding
 
   adds:
-  - elm files (`Main`, `Model`, `View`, `Update`)
+  - elm files (`Main`, `Model`, `View`, `State`)
   - an embed script
   - `elm-package.json`
   - A phoenix `controller`, `view` and `template`
@@ -119,7 +119,7 @@ defmodule Mix.Tasks.Phx.Gen.Elm do
   defp copy_elm_files do
     files = [
       "assets/elm/Main.elm",
-      "assets/elm/Update.elm",
+      "assets/elm/State.elm",
       "assets/elm/View.elm",
       "assets/elm/Model.elm",
       "assets/js/elm-embed.js",
